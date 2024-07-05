@@ -1,0 +1,98 @@
+/* loader.css */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #ff4500;
+    }
+    25% {
+      color: #ffffff;
+    }
+    50% {
+      color: #00bfff;
+    }
+    75% {
+      color: #32cd32;
+    }
+    100% {
+      color: #000000;
+    }
+  }
+  
+  .l, .o, .a, .d, .i, .n, .g {
+    display: inline-block;
+    animation: bounce 2s infinite, colorChange 5s infinite;
+  }
+  
+  .l {
+    animation-delay: 0s;
+  }
+  .o {
+    animation-delay: 0.1s;
+  }
+  .a {
+    animation-delay: 0.2s;
+  }
+  .d {
+    animation-delay: 0.3s;
+  }
+  .i {
+    animation-delay: 0.4s;
+  }
+  .n {
+    animation-delay: 0.5s;
+  }
+  .g {
+    animation-delay: 0.6s;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .fixed {
+    position: fixed;
+  }
+  
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bg-slate-900 {
+    background-color: #1e293b;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem; /* 30px */
+  }
+  
+  .gap-5 {
+    gap: 1.25rem; /* 20px */
+  }
+  
