@@ -1,0 +1,52 @@
+Portfolio --> MERN
+
+inetialize portfolio folder : npm init, npm install express mongoose dotenv
+
+FRONTEND :
+    - npx create-react-app client
+    - npm install react-router-dom
+
+BACKEND :
+    - create server.js
+    - npm init      (inetialize folder)
+    - npm install express mongoose dotenv
+
+
+Create db and get connection string from    (https://cloud.mongodb.com) 
+    mongodb.com => google account login
+    Mongodb atlas cluster1:
+        - username : ds095536          password :  PRhPtmoKYoJnC9Dt
+
+    Database access credentials :
+        - connection string
+            mongodb+srv://ds095536:ds095536_dbaccesspassword@cluster1.coujszi.mongodb.net/portfolio
+        - db name : portfolio      collection name :  users
+        - username : ds095536@admin    password : ds095536_dbaccesspassword
+
+    open db in mongodb compass   using conn string and atlas cluster credentials
+
+create .env and dbConfig.js(code for db conn to nodejs/backend server)
+
+restart server
+update server.js
+
+*For every collection he should have a structure which we will define in models
+-> create models (portfolioModel.js,userModel.js)
+
+
+create collections(e.g education) in mongodb compass
+    -> click ADD DATA --> Insert document -> add code (written in structure_for_mongodb.js) e.g
+    [
+        {
+            "companyname":"Dexpert System",
+            "companyimage":"https://dexpertsystems.in/assets/logo/web_icon.png",
+            "period":"May 2024 - Current",
+            "role":"FullStack web developer intern works on MERN stack, MySQL, PostgreSQL"
+        }
+    ]
+
+Create portfolioRoutes.js (create apis to fetch data from mongodb);
+-> create get,post,put,delete apis
+-> use router created in this file in server.js
+
+flow -> server.js --> portfolioRoutes.js

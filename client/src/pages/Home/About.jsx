@@ -2,11 +2,11 @@ import React from 'react';
 import SectionTitle from '../../components/SectionTitle';
 import jsIcon from '../../resources/icons/icons8-javascript.gif';
 import reactIcon from '../../resources/icons/icons8-react-js.gif';
-import nodeIcon from '../../resources/icons/icons8-node-js.svg';
-import dtbs from '../../resources/icons/icon-db.gif';
-import djangoIcon from '../../resources/icons/icon-django.gif'
 import pythonIcon from '../../resources/icons/icons8-python.gif';
+import djangoIcon from '../../resources/icons/icon-django.gif'
+import dtbs from '../../resources/icons/icon-db.gif';
 import database from '../../resources/icons/icons-database.gif';
+import nodeIcon from '../../resources/icons/icons8-node-js.svg';
 import sql from '../../resources/icons/icon-db.gif';
 import dexpertImage from '../../resources/dexpertIcon.png';
 import integralimage from '../../resources/icons/educationicons/integralUniIcon.jpg';
@@ -26,7 +26,7 @@ const About = () => {
       id: 1,
       name: "Dexpert System",
       image: dexpertImage,
-      location: "May 2024 - Current",
+      period: "May 2024 - Current",
       about: "FullStack web developer intern works on MERN stack, MySQL, PostgreSQL",
       link: '#',
     },
@@ -116,7 +116,7 @@ const About = () => {
                 key={experience.id}
                 name={experience.name}
                 image={experience.image}
-                location={experience.location}
+                period={experience.period}
                 about={experience.about}
                 link={experience.link}
               />

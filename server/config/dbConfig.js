@@ -11,12 +11,12 @@ mongoose.connect(mongoURI, {
 
 const connection = mongoose.connection;
 
-connection.on('error', () => {
-  console.log('Error in DB connection');
+connection.on('error', (err) => {
+  console.error('Error in DB connection:', err);
 });
 
 connection.once('open', () => {
   console.log('Connected to DB successfully');
 });
 
-module.exports = mongoose;
+module.exports = connection;

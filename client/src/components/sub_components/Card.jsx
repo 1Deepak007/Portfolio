@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ name, image, location, about, link }) => {
+const Card = ({ name, image, period, about, link }) => {
   return (
     <div className=" bg-white border border-gray-200 rounded-lg shadow p-3 md:p-2 dark:bg-gray-800 dark:border-gray-700">
       <div className="flow-root">
@@ -21,7 +21,7 @@ const Card = ({ name, image, location, about, link }) => {
                   {about}
                 </p>
                 <p className="text-sm text-gray-500 text-wrap truncate dark:text-gray-400">
-                  {location}
+                  {[period]}
                 </p>
               </div>
             </div>
