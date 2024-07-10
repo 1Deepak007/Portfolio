@@ -82,7 +82,6 @@ const About = () => {
         </div>
 
         <div>
-          <h1 className='text-green-400 md:text-3xl text-2xl mt-10 underline underline-offset-8'>Tools & Technologies </h1>
           <div>
             <h1 className='text-green-400 md:text-3xl text-2xl mt-10 underline underline-offset-8'>Tools & Technologies</h1>
             <div className="grid grid-cols-2 gap-4 mt-5 border-blue-400 sm:grid-cols-4">
