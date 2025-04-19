@@ -12,20 +12,6 @@ BACKEND :
     - npm install express mongoose dotenv
 
 
-Create db and get connection string from    (https://cloud.mongodb.com) 
-    mongodb.com => google account login
-    Mongodb atlas cluster1:
-        - username : ds095536          password :  PRhPtmoKYoJnC9Dt
-
-    Database access credentials :
-        - connection string
-            mongodb+srv://ds095536:ds095536_dbaccesspassword@cluster1.coujszi.mongodb.net/portfolio
-        - db name : portfolio      collection name :  users
-        - username : ds095536@admin    password : ds095536_dbaccesspassword
-
-    open db in mongodb compass   using conn string and atlas cluster credentials
-
-create .env and dbConfig.js(code for db conn to nodejs/backend server)
 
 restart server
 update server.js
